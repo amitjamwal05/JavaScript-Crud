@@ -47,7 +47,10 @@ const Select = () =>{
     } 
 }
 Select();
-
+const edit = (editDatas) =>{
+    let arr = getCrudData();
+    document.querySelector('#name').value = arr[editDatas];
+}
 const deleteData = (dataDelete) =>{
     let arr = getCrudData();
     arr.splice(dataDelete,1);
